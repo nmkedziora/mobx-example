@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 import ToDo from './ToDo';
-import store from './ToDoStore';
+import toDoStore from './ToDoStore';
+import SampleForm from './SampleForm';
+import sampleFormStore from './SampleFormStore';
 
 import logo from './logo.svg';
 import './App.css';
@@ -14,7 +16,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <ToDo store={store}/>
+        <ToDo store={toDoStore}/>
+        <h1>sample form with mobx</h1>
+        <SampleForm store={sampleFormStore}/>
       </div>
     );
   }

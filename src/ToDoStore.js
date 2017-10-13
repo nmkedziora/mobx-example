@@ -32,6 +32,6 @@ class ToDoStore {
     }
 }
 
-var store = new ToDoStore;
+var store = new ToDoStore();
 
 export default store;
