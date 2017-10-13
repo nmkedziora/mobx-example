@@ -5,6 +5,10 @@ import toDoStore from './ToDoStore';
 import SampleForm from './SampleForm';
 import sampleFormStore from './SampleFormStore';
 
+import MobxForm from './MobxForm';
+import mobxForm from './forms/mobxForm';
+import mobxFormStore from './MobxFormStore';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,9 +20,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
+
         <ToDo store={toDoStore}/>
+
         <h1>sample form with mobx</h1>
-        <SampleForm store={sampleFormStore}/>
+        <SampleForm store={sampleFormStore} />
+
+        <h1>sample form with mobx-form</h1>
+        <MobxForm form={mobxForm} />
       </div>
     );
   }
